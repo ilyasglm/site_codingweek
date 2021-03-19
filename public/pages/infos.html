@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infos</title>
+    <!-- Lien Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- Icones bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+
+    <!-- lien googlefont dotGothic16 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+
+    <!-- Lien vers mon propre stylesheet -->
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+    <!-- Ancrage -->
+    <a id="top"></a>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light                                                 bg-bella">
+            <a class="navbar-brand fontBiz" href="#">GameTeam</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html">Accueil</a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Info <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./planning.html">Planning</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./recrutement.html">Recrutement</a>
+                    </li>
+                </ul>
+                <!-- Buton Search -->
+
+                <input style="width: 200px;" class="form-control mr-sm-2" type="search" placeholder="Search"
+                    aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0 mr-2" type="button" data-toggle="modal"
+                    data-target="#staticBackdrop">
+                    Search
+                </button>
+
+                <!-- Modal bouton Search -->
+
+                <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+                    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                ...
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Understood</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="form-inline my-2 my-lg-0">
+                    <!-- Modal Login -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                        Login
+                    </button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Se connecter</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form class="modal-content animate" action="/action_page.php">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <label for="uname"><b>Nom d'utilisateur : </b></label>
+                                                </div>
+                                                <div class="col-6 mx-auto">
+                                                    <input type="text" placeholder="Enter Username" name="uname"
+                                                        required>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <label for="psw"><b>Mot de Passe :</b></label>
+                                                </div>
+                                                <div class="col-6 mx-auto">
+                                                    <input type="password" placeholder="Enter Password" name="psw"
+                                                        required>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <label>
+                                                        <input type="checkbox" checked="checked" name="remember">
+                                                        Remember me
+                                                    </label>
+                                                </div>
+                                            </div>
+                                    </form>
+
+
+
+                                </div>
+
+                                <div class="container" style="background-color:#f1f1f1">
+                                    <span class="psw">Mot de passe <a href="#">oublié?</a></span>
+                                </div>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">annuler</button>
+                                <button type="button" class="btn btn-primary">Se connecter</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <button class="back-to-top-link">
+            <a href="#top"><i class="bi bi-arrow-bar-up"></i></a>
+        </button>
+        <div class="container">
+            <div class="row">
+                <div class="col border mt-5 bloklong bg-bella">
+                    <h2 class="text-center font-weight-bold ">Qui somme-nous?</h2>
+                    <p class="font-weight-bold">
+                        on est simplement un groupe de joueur e-sports qui gere un grand nombre de jeu et qui veut
+                        t'aider sur ton chemin de Gameur. <br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa at qui non? Dolore, enim dolorum
+                        magnam voluptate corporis saepe aut tempore dignissimos expedita tempora, culpa esse assumenda
+                        mollitia, laudantium accusamus! <br>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores nam aspernatur nobis
+                        similique quos deserunt omnis quae, animi odio vero voluptates. Nam officiis eveniet dolorem,
+                        consequuntur voluptate, sint similique officia <br>
+                        sit voluptatum assumenda quo saepe vitae delectus sunt. Iste, sequi possimus? Cum enim illo
+                        adipisci. Inventore necessitatibus asperiores labore sit! Facilis ut odio iusto voluptates,
+                        reprehenderit velit blanditiis exercitationem aliquid.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa at qui non? Dolore, enim dolorum
+                        magnam voluptate corporis saepe aut tempore dignissimos expedita tempora, culpa esse assumenda
+                        mollitia, laudantium accusamus! <br><br>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores nam aspernatur nobis
+                        similique quos deserunt omnis quae, animi odio vero voluptates. Nam officiis eveniet dolorem,
+                        consequuntur voluptate, sint similique officia <br>
+                        sit voluptatum assumenda quo saepe vitae delectus sunt. Iste, sequi possimus? Cum enim illo
+                        adipisci. Inventore necessitatibus asperiores labore sit! Facilis ut odio iusto voluptates,
+                        reprehenderit velit blanditiis exercitationem aliquid.<br><br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa at qui non? Dolore, enim dolorum
+                        magnam voluptate corporis saepe aut tempore dignissimos expedita tempora, culpa esse assumenda
+                        mollitia, laudantium accusamus! <br>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores nam aspernatur nobis
+                        similique quos deserunt omnis quae, animi odio vero voluptates. Nam officiis eveniet dolorem,
+                        consequuntur voluptate, sint similique officia <br>
+                        sit voluptatum assumenda quo saepe vitae delectus sunt. Iste, sequi possimus? Cum enim illo
+                        adipisci. Inventore necessitatibus asperiores labore sit! Facilis ut odio iusto voluptates,
+                        reprehenderit velit blanditiis exercitationem aliquid fin du lorem.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row mt-5 ">
+                <div class="col bg-bella">
+                    <div class="row">
+                        <div class="col">
+                            <h1 class="font-weight-bold text-center">Notre Equipe</h1>
+                        </div>
+                    </div>
+                    <div class="row mt-2 font-weight-bold">
+                        <div class="col-3">
+                            <img class="imgJoueurs img-fluid" src="../img/xantares.png" alt="xantares">
+                        </div>
+                        <div class="col-6">
+                            <div class="row border-dark border">
+                                <h1>Xantares</h1>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">Age :</div>
+                                <div class="col-9">25</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">Nationalité:</div>
+                                <div class="col-9">Turc</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">Bio :</div>
+                                <div class="col-9">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi error
+                                    cum ea, illo fugit asperiores quia placeat voluptatibus impedit perspiciatis.</div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <hr>
+                    <div class="row my-2 font-weight-bold">
+                        <div class="col-6 offset-3">
+                            <div class="row border-dark border">
+                                <h1>Get_Right</h1>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">Age :</div>
+                                <div class="col-9">30</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">Nationalité:</div>
+                                <div class="col-9">Suedois</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">Bio :</div>
+                                <div class="col-9">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi error
+                                    cum ea, illo fugit asperiores quia placeat voluptatibus impedit perspiciatis.</div>
+                            </div>
+
+
+                        </div>
+                        <div class="col offset-1">
+                            <img class="imgJoueurs img-fluid" src="../img/get_right.png" alt="getright">
+                        </div>
+
+                    </div>
+                    <hr>
+                    <div class="row my-3 font-weight-bold">
+                        <div class="col-3">
+                            <img class="imgJoueurs img-fluid" src="../img/faker.jpeg" alt="faker">
+                        </div>
+                        <div class="col-6">
+                            <div class="row border-dark border">
+                                <h1>Faker</h1>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">Age :</div>
+                                <div class="col-9">24</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">Nationalité:</div>
+                                <div class="col-9">Sud-Coréen</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">Bio :</div>
+                                <div class="col-9">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi error
+                                    cum ea, illo fugit asperiores quia placeat voluptatibus impedit perspiciatis.</div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="container py-1">
+            <div class="row">
+                <div class="col-4">
+                    &copy;Copyright. All rights reserved. Since 1993
+                </div>
+
+                <!-- Colonne milieu -->
+                <div class="col-4 text-center">
+                    Lorem ipsum dolor sit amet.
+                </div>
+
+                <!-- Colonne Reseaux sociaux -->
+                <div class="col-4 text-right">
+                    <!-- FACEBOOK -->
+                    <a href="https://www.facebook.com/ilyas.saglam.654" target="_blank" class="text-footer2">
+                        Facebook <i class="bi bi-facebook"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <a href="https://www.google.com" target="_blank" class="text-footer"> Conditions d'utilisation</a>
+                </div>
+                <div class="col-4">
+                    <a href="https://www.google.com" target="_blank" class="text-footer"> Ilyasglm Design Inc.</a>
+                </div>
+                <div class="col-4 text-right">
+                    <!-- INSTAGRAM -->
+                    <a href="https://www.instagram.com/ilyasglm/" target="_blank" class="text-footer2">
+                        Instagram <i class="bi bi-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <a href="https://www.google.com" target="_blank" class="text-footer"> FAQ</a>
+                </div>
+                <div class="col-4">
+                    <a href="https://www.google.com" target="_blank" class="text-footer"> Merci</a>
+                </div>
+                <div class="col-4 text-right">
+                    <!-- Twitch -->
+                    <a href="https://www.twitch.tv/ilyasglm" target="_blank" class="text-footer2">
+                        Twitch <i class="bi bi-twitch"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- 2 lignes de script Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

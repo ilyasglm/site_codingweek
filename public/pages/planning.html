@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planning</title>
+    <!-- Lien Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- Icones bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+
+    <!-- lien googlefont dotGothic16 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+
+    <!-- Lien vers mon propre stylesheet -->
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+    <!-- Ancrage -->
+    <a id="top"></a>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-bella">
+            <a class="navbar-brand fontBiz" href="#">GameTeam</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html">Accueil</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./infos.html">Info</a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./planning.html">Planning <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./recrutement.html">Recrutement</a>
+                    </li>
+                </ul>
+                <!-- Buton Search -->
+
+                <input style="width: 200px;" class="form-control mr-sm-2" type="search" placeholder="Search"
+                    aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0 mr-2" type="button" data-toggle="modal"
+                    data-target="#staticBackdrop">
+                    Search
+                </button>
+
+                <!-- Modal bouton Search -->
+
+                <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+                    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                ...
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Understood</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="form-inline my-2 my-lg-0">
+                    <!-- Modal Login -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                        Login
+                    </button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Se connecter</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form class="modal-content animate" action="/action_page.php">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <label for="uname"><b>Nom d'utilisateur : </b></label>
+                                                </div>
+                                                <div class="col-6 mx-auto">
+                                                    <input type="text" placeholder="Enter Username" name="uname"
+                                                        required>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <label for="psw"><b>Mot de Passe :</b></label>
+                                                </div>
+                                                <div class="col-6 mx-auto">
+                                                    <input type="password" placeholder="Enter Password" name="psw"
+                                                        required>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <label>
+                                                        <input type="checkbox" checked="checked" name="remember">
+                                                        Remember me
+                                                    </label>
+                                                </div>
+                                            </div>
+                                    </form>
+
+
+
+                                </div>
+
+                                <div class="container" style="background-color:#f1f1f1">
+                                    <span class="psw">Mot de passe <a href="#">oublié?</a></span>
+                                </div>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">annuler</button>
+                                <button type="button" class="btn btn-primary">Se connecter</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main avec les elements du site -->
+
+    <main>
+
+        <section>
+            <div class="container bg-bella mt-5">
+                <div class="col12 text-center text-black font-weight-bold p-2">
+                    <h1>Les entrainements sont intensif</h1>
+                    <p class="mt-2">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse id repellat nisi placeat dolores,
+                        facilis, magni tempore odit reiciendis architecto maxime vitae laboriosam omnis tenetur hic
+                        dicta aliquam veniam eveniet officia doloribus praesentium animi dolor quis. Possimus error et
+                        reiciendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam saepe non, illo
+                        consequuntur nobis at reiciendis nisi itaque optio enim. Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Ipsum rem atque modi sint natus ex cupiditate quidem architecto? Pariatur,
+                        saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore corrupti, atque et
+                        doloribus neque rerum obcaecati impedit totam sint suscipit.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container bg-bella mt-4">
+                <div class="col">
+                    <h1 class="text-center">Exemple de Planning</h1>
+                    <table class="table border font-weight-bold">
+                        <thead>
+                            <tr>
+                                <th scope="col-2 border">Jour</th>
+                                <th scope="col-3">8h-10h</th>
+                                <th scope="col-4">10h-15</th>
+                                <th scope="col-3">15h-20h</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Lundi</th>
+                                <td>Fitness/Cardio</td>
+                                <td>Entrainement Aim et reflexes</td>
+                                <td>Entraienemnt Soft skills streaming</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Mardi</th>
+                                <td>Fitness/Cardio</td>
+                                <td>Entrainement Aim et reflexes</td>
+                                <td>Entraienemnt Soft skills streaming</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Mercredi</th>
+                                <td>Fitness/Cardio</td>
+                                <td>Entrainement Aim et reflexes</td>
+                                <td>Entraienemnt Soft skills streaming</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Jeudi</th>
+                                <td>Fitness/Cardio</td>
+                                <td>Entrainement Aim et reflexes</td>
+                                <td>Entraienemnt Soft skills streaming</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Vendredi</th>
+                                <td>Fitness/Cardio</td>
+                                <td>Entrainement Aim et reflexes</td>
+                                <td>Entraienemnt Soft skills streaming</td>
+                            </tr>
+                            <tr>
+                                <th scope="row ">Samedi/dimanche</th>
+                                <td>Fitness/Cardio</td>
+                                <td>Entraienement Feintage</td>
+                                <td>Libre</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <!-- Le footer avec les icones et copyrights etc. -->
+
+    <footer>
+        <div class="container py-1">
+            <div class="row">
+                <div class="col-4">
+                    &copy;Copyright. All rights reserved. Since 1993
+                </div>
+
+                <!-- Colonne milieu -->
+                <div class="col-4 text-center">
+                    Lorem ipsum dolor sit amet.
+                </div>
+
+                <!-- Colonne Reseaux sociaux -->
+                <div class="col-4 text-right">
+                    <!-- FACEBOOK -->
+                    <a href="https://www.facebook.com/ilyas.saglam.654" target="_blank" class="text-footer2">
+                        Facebook <i class="bi bi-facebook"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <a href="https://www.google.com" target="_blank" class="text-footer"> Conditions d'utilisation</a>
+                </div>
+                <div class="col-4">
+                    <a href="https://www.google.com" target="_blank" class="text-footer"> Ilyasglm Design Inc.</a>
+                </div>
+                <div class="col-4 text-right">
+                    <!-- INSTAGRAM -->
+                    <a href="https://www.instagram.com/ilyasglm/" target="_blank" class="text-footer2">
+                        Instagram <i class="bi bi-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <a href="https://www.google.com" target="_blank" class="text-footer"> FAQ</a>
+                </div>
+                <div class="col-4">
+                    <a href="https://www.google.com" target="_blank" class="text-footer"> Merci</a>
+                </div>
+                <div class="col-4 text-right">
+                    <!-- Twitch -->
+                    <a href="https://www.twitch.tv/ilyasglm" target="_blank" class="text-footer2">
+                        Twitch <i class="bi bi-twitch"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- 2 lignes de script Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
